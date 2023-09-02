@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap");
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+margin-top: 0;
+  background: #d1d8e0;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3.4rem;
+  background-color: #72080c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
+
+.rules-cont {
+  padding-top: 3rem;
+  height: auto;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.rules-cont > * {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+
+.rules-cont > p {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.main-cont {
+  width: 100%;
+  display: flex;
+  /* background-color: #CAD3C8; */
+  justify-content: center;
+}
+
+.game-cont {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 8vw);
+  grid-template-rows: repeat(3, 8vw);
+  font-family: "Fredoka One", cursive;
+  padding-left: 0;
+}
+
+.line {
+  position: absolute;
+  width: 24vw;
+  height: 5px;
+  background-color: red;
+}
+
+.box {
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  font-size: 6vw;
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.box:hover {
+  background-color: rgb(189, 192, 188);
+}
+
+.game-info-cont {
+  padding-left: 3rem;
+  /* display: flex; */
+}
+
+.bl-0 {
+  border-left: 0;
+}
+
+.bt-0 {
+  border-top: 0;
+}
+
+.bb-0 {
+  border-bottom: 0;
+}
+
+.br-0 {
+  border-right: 0;
+}
+
+.game-info {
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.reset {
+  margin-top: 6px;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 5px 15px;
+  margin: 20px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #d0cfdb;
+  box-shadow: 3px 3px #888888;
+}
+
+.reset:hover {
+  padding: 7px 20px;
+  background-color: #313135;
+  box-shadow: 3px 3px #e4c5c5;
+  font-size: 15px;
+  color: white;
+}
+
+img {
+  padding-top: 3px;
+  width: 0px;
+  transition: width 1s ease;
+}
+
+.copyright {
+  height: 6rem;
+  /* background-color: #56e635; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+li {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 50rem) {
+  .main-cont {
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  .rules-cont > p {
+    font-size: 17px;
+  }
+}
